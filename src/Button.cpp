@@ -11,8 +11,11 @@ Button::Button(uint btnPin, uint ledPin)
     gpio_init(btnPin);
     gpio_set_dir(btnPin, GPIO_IN);
 
-    gpio_init(ledPin);
-    gpio_set_dir(ledPin, GPIO_OUT);
+    if(ledPin != -1)
+    {
+        gpio_init(ledPin);
+        gpio_set_dir(ledPin, GPIO_OUT);
+    }
 }
 
 bool Button::isPressed()
@@ -26,6 +29,10 @@ bool Button::isPressed()
             {
                 t = currentTime;
                 released = false;
+                
+                if(ledPin != -1)
+                    gpio_put(ledPin, 1);
+                
                 return true;
             }
         }
@@ -33,6 +40,8 @@ bool Button::isPressed()
         {
             if(!released)
                 released = true;
+                if(ledPin != -1)
+                    gpio_put(ledPin, 0);
         }
     }
     

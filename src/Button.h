@@ -6,7 +6,7 @@
 class Button
 {
 public:
-    Button(uint btnPin, uint ledPin);
+    Button(uint btnPin, uint ledPin=-1); // if ledPin = -1 so no led
     bool isPressed();
 
 private:
