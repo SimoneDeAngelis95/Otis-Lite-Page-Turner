@@ -39,9 +39,11 @@ bool Button::isPressed()
         else
         {
             if(!released)
+            {
                 released = true;
                 if(ledPin != -1)
                     gpio_put(ledPin, 0);
+            }
         }
     }
     

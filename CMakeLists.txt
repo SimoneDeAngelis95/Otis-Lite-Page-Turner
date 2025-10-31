@@ -37,7 +37,8 @@ pico_sdk_init()
 
 add_executable(Otis_lite src/main.cpp
                          src/USBinterface.cpp
-                         src/Button.cpp)
+                         src/Button.cpp
+                         src/FlashStorage.cpp)
 
 pico_set_program_name(Otis_lite "Otis_lite")
 pico_set_program_version(Otis_lite "0.1")
