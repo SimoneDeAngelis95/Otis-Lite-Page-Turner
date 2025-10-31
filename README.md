@@ -17,7 +17,7 @@ The pedal features **three physical buttons**, each paired with an **LED indicat
 - **Two main buttons** for page turning (left and right arrows by default).  
 - **One mode button** to switch the arrow direction mode:
   - **Horizontal mode** → buttons send **←** and **→**
-  - **Vertical mode** → buttons send **↑** and **↓**
+  - **Vertical mode** → buttons send **↑** (page up) and **↓** (page down)
 
 A dedicated LED indicates the active mode, so you always know which direction is currently enabled.
 
@@ -53,11 +53,6 @@ Otis Lite is recognized by your device as a **standard USB keyboard (HID)**, so 
 
 The firmware is written in **C++** using the **Raspberry Pi Pico SDK**.  
 Otis Lite behaves as a **USB HID keyboard**, sending arrow key codes to the connected device.
-
-Example mapping:
-
-- **Horizontal mode:** `KEY_LEFT`, `KEY_RIGHT`
-- **Vertical mode:** `KEY_UP`, `KEY_DOWN`
 
 ---
 
