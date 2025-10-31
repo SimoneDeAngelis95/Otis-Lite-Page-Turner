@@ -7,6 +7,10 @@
 #include "assets.h"
 #include "FlashStorage.h"
 
+// ========================
+// V1.0.0 - Initial release
+// ========================
+
 int main()
 {
     board_init();
