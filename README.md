@@ -37,15 +37,15 @@ Otis Lite is recognized by your device as a **standard USB keyboard (HID)**, so 
 
 ## Pinout (default configuration)
 
-| Component           | Pico Pin | Function                                |
-| ------------------- | -------- | --------------------------------------- |
-| Mode Button         | GP20     | Switch direction mode                   |
-| Left Button         | GP21     | Page back                               |
-| Right Button        | GP22     | Page forward                            |
-| Left LED            | GP16     | Feedback for left button                |
-| Right LED           | GP17     | Feedback for right button               |
-| Vertical Mode LED   | GP18     | Indicates current mode is vertical mode |
-| Horizontal Mode LED | GP19     | Indicates current mode is vertical mode |
+| Component                   | Pico Pin | Function                                |
+| --------------------------- | -------- | --------------------------------------- |
+| Mode Button                 | GP20     | Switch direction mode                   |
+| Left Button                 | GP21     | Page back                               |
+| Right Button                | GP22     | Page forward                            |
+| Left LED                    | GP16     | Feedback for left button                |
+| Right LED                   | GP28     | Feedback for right button               |
+| Vertical Mode LED (left)    | GP18     | Indicates current mode is vertical mode |
+| Horizontal Mode LED (right) | GP19     | Indicates current mode is vertical mode |
 
 ---
 
